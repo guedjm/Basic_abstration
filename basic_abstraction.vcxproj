@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B3E65F75-816E-4A60-8177-83F18A20EE95}</ProjectGuid>
+    <RootNamespace>basic_abstraction</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)\build\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)\build\$(Configuration)</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalIncludeDirectories>$(ProjectDir)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="include\ICondVariable.h" />
+    <ClInclude Include="include\IMutex.h" />
+    <ClInclude Include="include\IObservable.h" />
+    <ClInclude Include="include\IReadable.h" />
+    <ClInclude Include="include\ISelect.h" />
+    <ClInclude Include="include\ITCPClient.h" />
+    <ClInclude Include="include\ITCPRemoteClient.h" />
+    <ClInclude Include="include\ITCPServer.h" />
+    <ClInclude Include="include\ITCPSocket.h" />
+    <ClInclude Include="include\IThread.h" />
+    <ClInclude Include="include\IUDPSocket.h" />
+    <ClInclude Include="include\IWritable.h" />
+    <ClInclude Include="include\LinuxPCondVariable.h" />
+    <ClInclude Include="include\LinuxPMutex.h" />
+    <ClInclude Include="include\LinuxPThread.h" />
+    <ClInclude Include="include\LinuxSelect.h" />
+    <ClInclude Include="include\LinuxTCPClient.h" />
+    <ClInclude Include="include\LinuxTCPRemoteClient.h" />
+    <ClInclude Include="include\LinuxTCPServer.h" />
+    <ClInclude Include="include\LinuxTCPSocket.h" />
+    <ClInclude Include="include\LinuxUDPSocket.h" />
+    <ClInclude Include="include\myCondVariable.h" />
+    <ClInclude Include="include\myMutex.h" />
+    <ClInclude Include="include\mySelect.h" />
+    <ClInclude Include="include\myTCPClient.h" />
+    <ClInclude Include="include\myTCPRemoteClient.h" />
+    <ClInclude Include="include\myTCPServer.h" />
+    <ClInclude Include="include\myTCPSocket.h" />
+    <ClInclude Include="include\myThread.h" />
+    <ClInclude Include="include\RandomGenerator.h" />
+    <ClInclude Include="include\SelectThread.h" />
+    <ClInclude Include="include\StandardInput.h" />
+    <ClInclude Include="include\WindowsCondVariable.h" />
+    <ClInclude Include="include\WindowsMutex.h" />
+    <ClInclude Include="include\WindowsSelect.h" />
+    <ClInclude Include="include\WindowsTCPClient.h" />
+    <ClInclude Include="include\WindowsTCPRemoteClient.h" />
+    <ClInclude Include="include\WindowsTCPServer.h" />
+    <ClInclude Include="include\WindowsTCPSocket.h" />
+    <ClInclude Include="include\WindowsThread.h" />
+    <ClInclude Include="include\WindowsUDPSocket.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\linux\LinuxPCondVariable.cpp" />
+    <ClCompile Include="src\linux\LinuxPMutex.cpp" />
+    <ClCompile Include="src\linux\LinuxPThread.cpp" />
+    <ClCompile Include="src\linux\LinuxSelect.cpp" />
+    <ClCompile Include="src\linux\LinuxTCPClient.cpp" />
+    <ClCompile Include="src\linux\LinuxTCPRemoteClient.cpp" />
+    <ClCompile Include="src\linux\LinuxTCPServer.cpp" />
+    <ClCompile Include="src\linux\LinuxTCPSocket.cpp" />
+    <ClCompile Include="src\linux\LinuxUDPSocket.cpp" />
+    <ClCompile Include="src\myTCPRemoteClient.cpp" />
+    <ClCompile Include="src\RandomGenerator.cpp" />
+    <ClCompile Include="src\SelectThread.cpp" />
+    <ClCompile Include="src\StandardInput.cpp" />
+    <ClCompile Include="src\windows\WindowsCondVariable.cpp" />
+    <ClCompile Include="src\windows\WindowsMutex.cpp" />
+    <ClCompile Include="src\windows\WindowsSelect.cpp" />
+    <ClCompile Include="src\windows\WindowsTCPClient.cpp" />
+    <ClCompile Include="src\windows\WindowsTCPRemoteClient.cpp" />
+    <ClCompile Include="src\windows\WindowsTCPServer.cpp" />
+    <ClCompile Include="src\windows\WindowsTCPSocket.cpp" />
+    <ClCompile Include="src\windows\WindowsThread.cpp" />
+    <ClCompile Include="src\windows\WindowsUDPSocket.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

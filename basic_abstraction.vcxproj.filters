@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\linux">
+      <UniqueIdentifier>{b28bc238-102c-4c1f-a11b-b9f3c88006d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\windows">
+      <UniqueIdentifier>{b98f3243-9d54-49d1-99da-f5fd39e6ef07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\linux">
+      <UniqueIdentifier>{2acc242c-64c3-42e6-8237-88d6ec6222de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\windows">
+      <UniqueIdentifier>{fd38983c-9e6a-4d63-a05b-b9f27024e7b4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\ICondVariable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\IMutex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\IObservable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\IReadable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ISelect.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ITCPClient.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ITCPRemoteClient.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ITCPServer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ITCPSocket.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\IThread.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\IUDPSocket.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\IWritable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\myCondVariable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\myMutex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mySelect.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\myTCPClient.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\myTCPRemoteClient.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\myTCPServer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\myTCPSocket.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\myThread.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SelectThread.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\StandardInput.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\LinuxPCondVariable.h">
+      <Filter>Header Files\linux</Filter>
+    </ClInclude>
+    <ClInclude Include="include\LinuxPMutex.h">
+      <Filter>Header Files\linux</Filter>
+    </ClInclude>
+    <ClInclude Include="include\LinuxPThread.h">
+      <Filter>Header Files\linux</Filter>
+    </ClInclude>
+    <ClInclude Include="include\LinuxSelect.h">
+      <Filter>Header Files\linux</Filter>
+    </ClInclude>
+    <ClInclude Include="include\LinuxTCPClient.h">
+      <Filter>Header Files\linux</Filter>
+    </ClInclude>
+    <ClInclude Include="include\LinuxTCPRemoteClient.h">
+      <Filter>Header Files\linux</Filter>
+    </ClInclude>
+    <ClInclude Include="include\LinuxTCPServer.h">
+      <Filter>Header Files\linux</Filter>
+    </ClInclude>
+    <ClInclude Include="include\LinuxTCPSocket.h">
+      <Filter>Header Files\linux</Filter>
+    </ClInclude>
+    <ClInclude Include="include\LinuxUDPSocket.h">
+      <Filter>Header Files\linux</Filter>
+    </ClInclude>
+    <ClInclude Include="include\WindowsCondVariable.h">
+      <Filter>Header Files\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="include\WindowsMutex.h">
+      <Filter>Header Files\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="include\WindowsSelect.h">
+      <Filter>Header Files\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="include\WindowsTCPClient.h">
+      <Filter>Header Files\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="include\WindowsTCPRemoteClient.h">
+      <Filter>Header Files\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="include\WindowsTCPServer.h">
+      <Filter>Header Files\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="include\WindowsTCPSocket.h">
+      <Filter>Header Files\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="include\WindowsThread.h">
+      <Filter>Header Files\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="include\WindowsUDPSocket.h">
+      <Filter>Header Files\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RandomGenerator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\myTCPRemoteClient.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SelectThread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\StandardInput.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\linux\LinuxPCondVariable.cpp">
+      <Filter>Source Files\linux</Filter>
+    </ClCompile>
+    <ClCompile Include="src\linux\LinuxPMutex.cpp">
+      <Filter>Source Files\linux</Filter>
+    </ClCompile>
+    <ClCompile Include="src\linux\LinuxPThread.cpp">
+      <Filter>Source Files\linux</Filter>
+    </ClCompile>
+    <ClCompile Include="src\linux\LinuxSelect.cpp">
+      <Filter>Source Files\linux</Filter>
+    </ClCompile>
+    <ClCompile Include="src\linux\LinuxTCPClient.cpp">
+      <Filter>Source Files\linux</Filter>
+    </ClCompile>
+    <ClCompile Include="src\linux\LinuxTCPRemoteClient.cpp">
+      <Filter>Source Files\linux</Filter>
+    </ClCompile>
+    <ClCompile Include="src\linux\LinuxTCPServer.cpp">
+      <Filter>Source Files\linux</Filter>
+    </ClCompile>
+    <ClCompile Include="src\linux\LinuxTCPSocket.cpp">
+      <Filter>Source Files\linux</Filter>
+    </ClCompile>
+    <ClCompile Include="src\linux\LinuxUDPSocket.cpp">
+      <Filter>Source Files\linux</Filter>
+    </ClCompile>
+    <ClCompile Include="src\windows\WindowsCondVariable.cpp">
+      <Filter>Source Files\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\windows\WindowsMutex.cpp">
+      <Filter>Source Files\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\windows\WindowsSelect.cpp">
+      <Filter>Source Files\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\windows\WindowsTCPClient.cpp">
+      <Filter>Source Files\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\windows\WindowsTCPRemoteClient.cpp">
+      <Filter>Source Files\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\windows\WindowsTCPServer.cpp">
+      <Filter>Source Files\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\windows\WindowsTCPSocket.cpp">
+      <Filter>Source Files\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\windows\WindowsThread.cpp">
+      <Filter>Source Files\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\windows\WindowsUDPSocket.cpp">
+      <Filter>Source Files\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RandomGenerator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
